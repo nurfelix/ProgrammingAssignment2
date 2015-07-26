@@ -1,5 +1,5 @@
-## Caches a matrix in separate enviroment and returns the inverse, if the cachesolve has
-##"seen" the matrix before it returns the already solved matrix
+## makeCacheMatrix caches a matrix and cachesolve returns the inverse, if the cachesolve has
+##"seen" the matrix before however it returns the already solved matrix stored in cache.
 
 ## caches a matrix
 
@@ -19,7 +19,9 @@ makeCacheMatrix<- function(x=matrix()) {
 
 
 
-## caches/returns the inverse matrix of matrix cached by the makeCacheMatrix function
+## caches/returns the inverse matrix of matrix cached by the makeCacheMatrix function if 
+## the same matrix is passed to cachesolve it doesn't compute the solution but presents
+## the cached inverse and prints "getting cached data"
 
 cachesolve <- function(x, ...) {
   m <- x$getsolve()
