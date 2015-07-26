@@ -1,5 +1,5 @@
-## makeCacheMatrix caches a matrix and cachesolve returns the inverse, if the cachesolve has
-##"seen" the matrix before however it returns the already solved matrix stored in cache.
+## makeCacheMatrix sets a matrix and cachesolve returns and caches the inverse, if the cachesolve has
+##"seen" the matrix before however it returns the already solved matrix stored in cache while printing "getting cached data".
 
 ## caches a matrix
 
