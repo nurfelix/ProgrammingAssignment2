@@ -1,8 +1,9 @@
 ## makeCacheMatrix sets a matrix and cachesolve returns and caches the inverse, if the cachesolve has
 ##"seen" the matrix before however it returns the already solved matrix stored in cache while printing "getting cached data".
 
-## sets a matrix
 
+
+## sets a matrix
 makeCacheMatrix<- function(x=matrix()) {
   m <- NULL
   set <- function(y) {
@@ -19,7 +20,7 @@ makeCacheMatrix<- function(x=matrix()) {
 
 
 
-## caches/returns the inverse matrix of matrix cached by the makeCacheMatrix function if 
+## caches/returns the inverse matrix of matrix set by the makeCacheMatrix function if 
 ## the same matrix is passed to cachesolve it doesn't compute the solution but presents
 ## the cached inverse and prints "getting cached data"
 
